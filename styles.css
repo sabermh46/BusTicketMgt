@@ -8,7 +8,7 @@
 }
 body {
     position: relative;
-    background: linear-gradient(to right bottom, #5cbb83, rgb(77, 48, 184));
+    background: rgb(209, 209, 209);
     min-height: 100vh;
     padding: 10px;
 }
