@@ -8,8 +8,9 @@
 }
 body {
     position: relative;
-    background: linear-gradient(to right bottom, #59a1db, rgb(77, 48, 184));
+    background: linear-gradient(to right bottom, #5cbb83, rgb(77, 48, 184));
     min-height: 100vh;
+    padding: 10px;
 }
 .nav {
     width: 100%;
@@ -17,23 +18,31 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background: #ffffff;
+    background: linear-gradient(to right, rgb(74, 132, 218), rgb(128, 212, 191), rgb(125, 221, 95));
     align-items: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.438);
 }
 .nav .brand {
     font-size: 30px;
-    margin: 0 30px;
     font-weight: 800;
-    color: rgba(51, 196, 82, 0.897);
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.233);
     cursor: pointer;
+    width: 100px;
+    text-align: center;
+    color: rgb(181, 216, 124);
+    transition: 0.3s;
+    white-space: nowrap;
+}
+.nav .brand:hover {
+    color: rgba(51, 196, 82, 0.897);
 }
 .nav .links ul {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 .nav .links ul li {
     list-style: none;
@@ -41,11 +50,68 @@ body {
 .nav .links ul li a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    padding: 5px 10px;
     font-size: 18px;
     font-weight: 500;
     transition: 0.3s;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.308);
+    border-radius: 3px;
+    border: 2px solid transparent;
 }
 .nav .links ul li a:hover {
-    color: rgb(43, 202, 123);
+    color: white;
+    background: rgba(43, 202, 122, 0.808);
+    border-color: rgba(43, 202, 122, 0.993);
+}
+
+.profile {
+    width: 100px;
+    height: 50px;
+    border:1px solid brown;
+}
+
+
+
+.qTicket {
+    background: #fff;
+    position: relative;
+    padding: 0 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    width: 250px;
+}
+.qTicket .title {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.qTicket .title span {
+    font-size: 13px;
+    font-weight: 300;
+    color: #00000077;
+}
+.body ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.body ul li {
+    margin:5px;
+}
+.body ul li a {
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    padding: 5px 15px;
+    background: #5cbb83;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    transition: 0.2s;
+}
+.body ul li a:hover {
+    background: #ff8717b9;
+    color: rgb(0, 0, 0);
+    clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
 }
