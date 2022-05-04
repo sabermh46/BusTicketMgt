@@ -8,10 +8,12 @@
 }
 body {
     position: relative;
-    background: #fcde67;
+    background: #444444;
     min-height: 100vh;
     padding: 10px;
     padding-top: 90px;
+    overflow-x: hidden;
+    min-height: 200vh;
 }
 .nav {
     width: calc(100% - 20px);
@@ -109,7 +111,47 @@ body {
     transition: 0.2s;
 }
 .body ul li a:hover {
-    background: #ff8717b9;
+    background: #6fbb83b9;
     color: rgb(0, 0, 0);
     clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
+}
+.container {
+    width: 80%;
+    height: 800px;
+    margin: 0 auto;
+    border: 1px solid #fcde67;
+    position: relative;
+}
+.busContainer {
+    width: 600px;
+    border: 1px solid rgb(199, 199, 199);
+    position: sticky;
+    top: 90px;
+    margin-left: 720px;
+    z-index: -1;
+}
+.bus {
+    width: 600px;
+    aspect-ratio: 2.98;
+    object-fit: cover;
+}
+.bus img {
+    width: 100%;
+}
+.wheel {
+    width: 55px;
+    aspect-ratio: 2.98;
+    object-fit: cover;
+    position: absolute;
+    z-index: 99;
+    bottom: 7%;
+}
+.wheel img {
+    width: 100%;
+}
+.wheelFront {
+    left: 18.55%;
+}
+.wheelRear {
+    right: 21%;
 }
