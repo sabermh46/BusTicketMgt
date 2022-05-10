@@ -1,0 +1,62 @@
+div.form {
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+}
+div.form form {
+    background: rgb(129 165 155 / 41%);
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 7px;
+    color: white;
+    box-shadow: 0px 5px 11px 1px #00000085;
+}
+form .option {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    white-space: nowrap;
+}
+.option .label {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.488);
+}
+.option .inp input {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    border: none;
+    box-shadow: 0px 2px 4px 0px #00000087;
+}
+.submit input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.5s;
+    background: rgb(206, 205, 172);
+}
+.submit input:hover {
+    letter-spacing: 2px;
+    background: rgb(191, 188, 129);
+}
+a.reg {
+    text-decoration: none;
+    color: rgb(81, 219, 210);
+}
+
+a.reg:hover {
+    color: rgb(94, 255, 244);
+}
+.extra {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.486);
+}
