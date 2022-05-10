@@ -139,9 +139,10 @@ body {
     width: 100%;
 }
 .wheel {
+    background: url(pics/wheel.png);
     width: 55px;
-    aspect-ratio: 2.98;
-    object-fit: cover;
+    aspect-ratio: 1;
+    background-size: cover;
     position: absolute;
     z-index: 99;
     bottom: 7%;
