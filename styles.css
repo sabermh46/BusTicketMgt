@@ -30,6 +30,7 @@ body {
     box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.438);
     position: fixed;
     top: 10px;
+    z-index: 99999;
 }
 .nav .brand {
     font-size: 30px;
@@ -42,7 +43,7 @@ body {
     white-space: nowrap;
 }
 .nav .brand:hover {
-    color: rgba(51, 196, 82, 0.897);
+    color: rgba(93, 109, 213, 0.897);
 }
 .nav .links ul {
     display: flex;
@@ -116,23 +117,27 @@ body {
     clip-path: polygon(0 0, 95% 0, 100% 100%, 5% 100%);
 }
 .container {
-    width: 80%;
-    height: 800px;
+    width: 100%;
+    height: 1000px;
     margin: 0 auto;
     border: 1px solid #fcde67;
     position: relative;
+    padding: 0 50px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 .busContainer {
     width: 600px;
+    height: 202px;
     border: 1px solid rgb(199, 199, 199);
     position: sticky;
     top: 90px;
-    margin-left: 720px;
     z-index: -1;
 }
 .bus {
     width: 600px;
-    aspect-ratio: 2.98;
+    aspect-ratio: 2.98 !important;
     object-fit: cover;
 }
 .bus img {
